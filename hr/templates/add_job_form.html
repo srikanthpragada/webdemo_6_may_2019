@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Job With Form</title>
+</head>
+<body>
+<h1>Add Job With Form</h1>
+<form method="post">
+    {% csrf_token %}
+    <table>
+    {{form}}
+    </table>
+    <P></P>
+    <input type="submit" value="Add Job" />
+</form>
+<p/>
+<h4>{{msg}}</h4>
+</body>
+</html>
