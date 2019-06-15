@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+    <style>
+        body {font-family:verdana;font-size:10pt;}
+        .banner {
+           background-color:blue;
+           color:white;
+           font-size:20pt;
+           font-weight:bold;
+           letter-spacing:5pt;
+           padding:5pt;
+        }
+        .menu {
+           background-color:lightgray;
+           font-weight:bold;
+           font-size:12pt;
+           letter-spacing:2pt;
+           padding:5pt;
+        }
+    </style>
+</head>
+<body>
+<div class="banner">Employees</div>
+<div class="menu">
+<a href="/hr/listemployees">List</a>
+<a href="/hr/addemployee">Add</a>
+<a href="/hr/search">Search</a>
+</div>
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
