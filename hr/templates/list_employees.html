@@ -2,5 +2,27 @@
 
 {% block content %}
 <h1>List Employees</h1>
+<table width="100%" cellpadding="5pt" border="1">
+    <tr style="background-color:gray;color:white">
+        <th>Id</th>
+        <th>Fullname</th>
+        <th>Title</th>
+        <th>Salary</th>
+        <th></th>
+    </tr>
+    {% for e in emps %}
+      <tr>
+          <td>{{e.id}}</td>
+          <td>{{e.fullname}}</td>
+          <td>{{e.title}}</td>
+          <td style="text-align:right">{{e.salary}}</td>
+          <td style="text-align:center">
+              <a onclick="return confirm('Do you want to delete employee?')"
+                 href="/hr/deleteemployee/{{e.id}}">Delete</a>
+              <a href="/hr/editemployee/{{e.id}}">Edit</a>
+          </td>
+      </tr>
+    {% endfor %}
+</table>
 
 {% endblock%}
