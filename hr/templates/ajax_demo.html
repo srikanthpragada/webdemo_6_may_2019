@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function getEmpCount() {
+           $.get("/hr/empcount",null,showCount);
+        }
+
+        function showCount(response) {
+           $("#count").text("No. of employees : " + response)
+        }
+    </script>
+</head>
+<body>
+<h1>Ajax Demo</h1>
+<button onclick="getEmpCount()">Get Employee Count</button>
+<h1 id="count"></h1>
+</body>
+</html>

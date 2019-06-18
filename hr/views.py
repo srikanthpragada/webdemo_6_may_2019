@@ -21,3 +21,6 @@ def list_countries(request):
     # Send template to client
     return render(request, "countries.html",
                   {"countries" : countries})
+
+def ajax_demo(request):
+    return render(request,'ajax_demo.html')

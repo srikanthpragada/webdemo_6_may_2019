@@ -1,0 +1,20 @@
+{% extends "employee_master.html" %}
+
+{% block content %}
+<h1>Edit Employee</h1>
+
+{% if form %}
+<form method="post">
+    {% csrf_token %}
+    <table>
+        {{form}}
+    </table>
+    <p></p>
+    <input type="submit" value="Update Employee"/>
+</form>
+{% endif %}
+
+<h4>{{message}}</h4>
+
+
+{% endblock%}
