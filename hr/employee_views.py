@@ -1,5 +1,6 @@
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
+
 from .forms import EmployeeForm
 from .models import Employee
 
@@ -58,5 +59,21 @@ def edit_employee(request, id):
                           {'form': f,
                            'message': 'Invalid Data. Please correct and resubmit'})
 
+
 def emp_count(request):
-    return HttpResponse( len(Employee.objects.all()))
+    return HttpResponse(len(Employee.objects.all()))
+
+
+def search_employees_form(request):
+    return render(request, 'search_employees.html')
+
+# Returns array of JSON objects
+def search_employees(request):
+    name = request.GET["name"]
+    emps = Employee.objects.filter(fullname__contains=name).values()
+    emplist = list(emps)
+    return JsonResponse(emplist,safe=False)
+
+
+
+

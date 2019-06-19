@@ -14,6 +14,8 @@ urlpatterns = [
     path('listemployees/', employee_views.list_employees),
     path('addemployee/', employee_views.add_employee),
     path('deleteemployee/<int:id>', employee_views.delete_employee),
+    path('searchform/', employee_views.search_employees_form),
+    path('search/', employee_views.search_employees),
     path('ajaxdemo/', views.ajax_demo),
     path('empcount/', employee_views.emp_count),
 ]

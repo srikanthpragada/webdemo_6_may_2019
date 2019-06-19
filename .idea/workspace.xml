@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e5f11e6-2ed4-42ea-9ea0-8a5bfe0783f0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/hr/templates/ajax_demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hr/templates/edit_employee.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hr/templates/search_employees.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hr/employee_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hr/employee_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hr/templates/employee_master.html" beforeDir="false" afterPath="$PROJECT_DIR$/hr/templates/employee_master.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hr/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hr/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hr/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,15 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hr/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hr/forms.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -35,15 +25,6 @@
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_employee.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hr/templates/add_employee.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="13" selection-start-line="8" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -65,24 +46,35 @@
       <file leaf-file-name="employee_views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hr/employee_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="61" column="28" lean-forward="true" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+            <state relative-caret-position="187">
+              <caret line="70" column="30" lean-forward="true" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
-                <element signature="e#143#238#0" />
-                <element signature="e#272#654#0" />
-                <element signature="e#695#985#0" />
-                <element signature="e#1022#1752#0" />
+                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#179#274#0" />
+                <element signature="e#308#690#0" />
+                <element signature="e#731#1019#0" />
+                <element signature="e#1058#1871#0" />
+                <element signature="e#1901#1950#0" />
+                <element signature="e#1993#2008#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax_demo.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hr/templates/ajax_demo.html">
+      <file leaf-file-name="search_employees.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hr/templates/search_employees.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="203">
+              <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="employee_master.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hr/templates/employee_master.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -91,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/hr/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="290">
-              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding>
                 <element signature="e#115#312#0" />
                 <element signature="e#341#425#0" />
@@ -104,7 +96,7 @@
       <file leaf-file-name="edit_employee.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hr/templates/edit_employee.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
+            <state relative-caret-position="145">
               <caret line="5" column="10" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="10" />
             </state>
           </provider>
@@ -122,8 +114,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hr/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="290">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="22" />
               <folding>
                 <element signature="e#1#47#0" expanded="true" />
               </folding>
@@ -155,16 +147,17 @@
         <option value="$PROJECT_DIR$/hr/templates/add_job_form.html" />
         <option value="$PROJECT_DIR$/hr/job_views.py" />
         <option value="$PROJECT_DIR$/hr/models.py" />
-        <option value="$PROJECT_DIR$/hr/templates/employee_master.html" />
         <option value="$PROJECT_DIR$/hr/forms.py" />
         <option value="$PROJECT_DIR$/hr/templates/add_employee.html" />
         <option value="$PROJECT_DIR$/hr/templates/delete_employee.html" />
         <option value="$PROJECT_DIR$/hr/templates/list_employees.html" />
         <option value="$PROJECT_DIR$/hr/templates/edit_employee.html" />
         <option value="$PROJECT_DIR$/hr/views.py" />
+        <option value="$PROJECT_DIR$/hr/templates/ajax_demo.html" />
+        <option value="$PROJECT_DIR$/hr/templates/employee_master.html" />
         <option value="$PROJECT_DIR$/hr/urls.py" />
         <option value="$PROJECT_DIR$/hr/employee_views.py" />
-        <option value="$PROJECT_DIR$/hr/templates/ajax_demo.html" />
+        <option value="$PROJECT_DIR$/hr/templates/search_employees.html" />
       </list>
     </option>
   </component>
@@ -182,6 +175,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,7 +203,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,7 +244,7 @@
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19554849" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17011128" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -298,13 +291,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webdemo/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webdemo/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
@@ -316,9 +302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -392,9 +375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -447,9 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -595,20 +572,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hr/templates/employee_master.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hr/job_views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="13" column="58" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -657,25 +624,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hr/templates/edit_employee.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
+        <state relative-caret-position="145">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hr/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="e#1#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hr/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
-          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding>
             <element signature="e#115#312#0" />
             <element signature="e#341#425#0" />
@@ -684,24 +641,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hr/employee_views.py">
+    <entry file="file://$PROJECT_DIR$/hr/templates/ajax_demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="61" column="28" lean-forward="true" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+        <state relative-caret-position="406">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hr/templates/employee_master.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hr/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="22" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#143#238#0" />
-            <element signature="e#272#654#0" />
-            <element signature="e#695#985#0" />
-            <element signature="e#1022#1752#0" />
+            <element signature="e#1#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hr/templates/ajax_demo.html">
+    <entry file="file://$PROJECT_DIR$/hr/employee_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="187">
+          <caret line="70" column="30" lean-forward="true" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#179#274#0" />
+            <element signature="e#308#690#0" />
+            <element signature="e#731#1019#0" />
+            <element signature="e#1058#1871#0" />
+            <element signature="e#1901#1950#0" />
+            <element signature="e#1993#2008#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hr/templates/search_employees.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>

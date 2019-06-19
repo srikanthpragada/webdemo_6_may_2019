@@ -1,0 +1,42 @@
+{% extends "employee_master.html" %}
+{% block content %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+        function searchEmployees() {
+           $.get("/hr/search?name=" + $("#name").val(),null, showEmployees);
+        }
+
+        function showEmployees(employees) {
+             $("#emps").html(""); // clear UL
+             $("#msg").html("")   // clear error message
+
+             if(employees.length == 0)
+             {
+                $("#msg").text("Sorry! No employees found")
+                return
+             }
+
+             str = ""
+             for(i=0; i < employees.length ; i ++)
+             {
+                str += "<li>" + "<a href='/hr/editemployee/" +
+                        employees[i].id + "'>" +
+                    employees[i].fullname + "</a></li>";
+             }
+
+             $("#emps").html(str)
+        }
+
+</script>
+<h1>Search Employees</h1>
+
+Name : <input type="text" id="name"/>
+<button onclick="searchEmployees()">Search</button>
+
+<ul id="emps">
+
+</ul>
+<h4 id="msg"></h4>
+
+{% endblock%}
