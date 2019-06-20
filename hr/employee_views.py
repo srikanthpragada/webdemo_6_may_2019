@@ -1,6 +1,6 @@
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
-
+import datetime
 from .forms import EmployeeForm
 from .models import Employee
 
@@ -65,14 +65,23 @@ def emp_count(request):
 
 
 def search_employees_form(request):
-    return render(request, 'search_employees.html')
+    if 'pattern'  in request.COOKIES:
+        pattern = request.COOKIES['pattern']
+    else:
+        pattern = ''
+
+    return render(request, 'search_employees.html',
+                  {'pattern' : pattern })
 
 # Returns array of JSON objects
 def search_employees(request):
     name = request.GET["name"]
     emps = Employee.objects.filter(fullname__contains=name).values()
     emplist = list(emps)
-    return JsonResponse(emplist,safe=False)
+    response = JsonResponse(emplist,safe=False)
+    response.set_cookie("pattern", name,
+       expires=datetime.datetime.now() + datetime.timedelta(days=10))
+    return response
 
 
 
