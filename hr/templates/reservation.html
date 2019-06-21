@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Of passengers</title>
+</head>
+<body>
+<h1>Add Passenger</h1>
+<form method="post">
+    {% csrf_token %}
+    Name : <input type="text" name="pname"/>
+    Age : <input type="number" name="page"/>
+    <input type="submit" value="Add"/>
+</form>
+
+
+<p></p>
+
+{% if len > 0 %}
+<h2>Passengers List</h2>
+<table width="100%" border="1" cellpadding="5pt">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Action</th>
+    </tr>
+    {% for p in plist %}
+    <tr>
+        <td>{{p.name}}</td>
+        <td>{{p.age}}</td>
+        <td style="text-align:center"><a href="/hr/delpass?name={{p.name}}">Delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+</body>
+</html>

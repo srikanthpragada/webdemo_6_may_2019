@@ -18,5 +18,7 @@ urlpatterns = [
     path('search/', employee_views.search_employees),
     path('ajaxdemo/', views.ajax_demo),
     path('empcount/', employee_views.emp_count),
+    path('plist/', views.add_passenger),
+    path('delpass/', views.delete_passenger),
 ]
 
