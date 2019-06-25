@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rest Client</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var URL = "/hr/rest/employees/";
+
+        function getEmployee() {
+            $.ajax(
+                   { "url": URL + $("#empid").val(),
+                     "type" : "get",
+                     "success" :
+                             function(emp) {
+                                alert(emp.fullname + " : " + emp.title)
+                             },
+                     "error" : function() {
+                                 alert("Sorry! Employee Not Found");
+                             }
+                    }
+            );
+        }
+
+         function deleteEmployee() {
+            if (! confirm("Do you really want to delete employee?") )
+                 return;
+
+            $.ajax(
+                   { "url": URL + $("#empid").val(),
+                     "type" : "delete",
+                     "success" :
+                             function() {
+                                alert("Deleted Employee Successfully")
+                             },
+                     "error" : function() {
+                                 alert("Sorry! Employee Not Found");
+                             }
+                    }
+            );
+        }
+
+
+        function getEmployees() {
+            $.get(URL,null,showEmployees);
+        }
+
+        function showEmployees(emps){
+             st = "";
+             for(var i = 0; i < emps.length ; i ++)
+                 st += emps[i].id + " - "  +  emps[i].fullname + "<br/>";
+
+             $("#emps").html(st);
+        }
+
+        function addEmployee() {
+           var data = {
+                       "fullname" : $("#fullname").val(),
+                       "title" : $("#title").val(),
+                       "salary": $("#salary").val()
+                      };
+
+            $.ajax(
+                   { "url": URL,
+                     "data": data,
+                     "type" : "post",
+                     "success" : add_success,
+                     "error" : add_failure
+                    }
+            );
+        }
+
+        function add_success() {
+           alert("Employee has been added successfully!");
+        }
+
+        function add_failure() {
+           alert("Employee was not added due to errors!");
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+<h1>Employee Client</h1>
+<h3>Add Employee</h3>
+Fullname : <input type="text" id="fullname"/>
+Title : <input type="text" id="title"/>
+Salary : <input type="number" id="salary"/>
+<p></p>
+<button onclick="addEmployee()">Add Employee</button>
+<hr/>
+<h3>Emp Details</h3>
+Id : <input type="number" id="empid"/>
+<button onclick="deleteEmployee()">Delete</button>
+<button onclick="getEmployee()">Get Details</button>
+<hr/>
+<div id="emps"></div>
+<p></p>
+<button onclick="getEmployees()">Get All Employees</button>
+
+</body>
+</html>
